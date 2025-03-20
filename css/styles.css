@@ -1,0 +1,301 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*------------------------------------------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/*---------------------------------NAVBAR-----------------------------------*/
+#nav-bar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    z-index: 1000;
+    overflow-x: auto;
+    background-color: #C6C09C;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5em;
+    margin-right: 3em;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-link {
+    font-family: "Karla", Verdana, sans-serif;
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+/*---------------------------------ABOUT-----------------------------------*/
+#about {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    gap: 100px;
+    scroll-margin-top: 80px;
+    margin-top: 80px;
+    height: 100vh;
+    background: linear-gradient(180deg, #F6F0E9, #FAEDED);
+}
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25vh;
+    min-width: 500px;
+    width: 500px;
+    height: 380px;
+    padding: 0 50px;
+    border-radius: 10px;
+    border: #B69E92 solid 1px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: "Alegreya", Georgia, serif;
+    font-size: 3.25em;
+    font-weight: 700;
+    color: #642822;
+    min-width: 500px;
+}
+
+p {
+    font-family: "Karla", Verdana, sans-serif;
+    font-size: 1.25em;
+    line-height: 35px;
+    letter-spacing: 1%;
+    min-width: 300px;
+}
+
+span {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #642822;
+}
+
+#polaroid {
+    overflow: visible;
+    margin-top: 13vh;
+    min-width: 400px;
+    width: 400px;
+    height: 610px;
+    background-color: white;
+    padding: 45px 30px 50px 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+#my_photo {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/*---------------------------------WORK-----------------------------------*/
+#work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 80px;
+    height: 100%;
+    width: 100vw;
+    padding: 5vh;
+    background: linear-gradient(180deg, #FAEDED, rgba(246, 240, 233, 70%));
+}
+
+#work-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 65vw;
+    min-width: 600px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 50%);
+    border-radius: 5px;
+}
+
+.work-image {
+    height: 320px;
+    width: 545px;
+    min-width: 400px;
+    object-fit: cover;
+    border: #B69E92 solid 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*---------------------------------CONTACT-----------------------------------*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Karla", Verdana, sans-serif;
+    height: calc(100vh - 100px);
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(246, 240, 233, 70%) 0%, white 100%);
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+#contact p {
+    font-size: 1.25em;
+    line-height: 35px;
+    letter-spacing: 1%;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 550px;
+    line-height: 35px;
+    letter-spacing: 1%;
+    color: #642822;
+    padding-top: 50px;
+}
+
+.contact_link {
+    margin-top: 30px;
+    padding: 10px 250px;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: #5B4F49;
+    background-color: #FAEDED;
+    border: #B69E92 solid 1px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+/*---------------------------------FOOTER-----------------------------------*/
+footer {
+    display: block;
+    width: 100%;
+    height: 5em;
+    background-color: rgba(246, 240, 233, 70%);
+    border-top: #B69E92 solid 2px;
+    text-align: right;
+}
+
+footer p {
+    padding: 1.25em 2em 0 1em;
+    font-size: 1.3em;
+    color: #5B4F49;
+}
+
+@media (max-width: 1000px) {
+    /*---------------------------------ABOUT-----------------------------------*/
+    #about {
+        flex-wrap: wrap-reverse;
+        height: 100%;
+        margin-top: 5vh
+    }
+
+    #bio {
+        margin-top: 0;
+    }
+
+    /*---------------------------------WORK-----------------------------------*/
+    #work {
+        padding: 10vh 5vh 5vh 5vh;
+    }
+
+    /*---------------------------------CONTACT-----------------------------------*/
+    #contact {
+        margin-top: 0;
+    }
+}
