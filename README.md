@@ -12,6 +12,6 @@ My personal portfolio deployed using Netflify.
 * VSCode
 * Netlify
 
-  **Resources Used**
-  * W3Schools
-  * Previous projects
+**Resources Used**
+* W3Schools
+* Previous projects
