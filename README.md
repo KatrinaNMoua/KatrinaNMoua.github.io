@@ -1,2 +1,13 @@
 # KatrinaNMoua.github.io
-My personal web portfolio
+My personal portfolio deployed using Netflify.
+
+**Tools Used**
+
+* Free Code Camp
+* codepen.io
+* GitHub
+* repositories
+* codespaces
+* GitHub desktop
+* VSCode
+* Netlify
