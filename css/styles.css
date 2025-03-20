@@ -105,7 +105,7 @@ li {
   list-style: none;
 }
 
-#navbar a:link {
+#navbar a {
   font-family: "Karla", Verdana, sans-serif;
   font-size: 1.4em;
   color: white;
